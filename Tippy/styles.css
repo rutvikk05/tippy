@@ -1,0 +1,99 @@
+*{
+    font-family: 'M PLUS Rounded 1c', Avenir Next, Helvetica, sans-serif;
+    color: white;
+}
+
+body{
+    background: #8990ec;
+}
+
+.wrapper{
+   background: #272639;
+   height: 525px;
+   width: 360px; 
+   border-radius: 1rem;
+   padding: 1.2rem;
+   margin: 100px auto;
+
+}
+
+#topcontainer{
+    margin-top: 4rem;
+}
+
+.container{
+    margin-top: 1.4rem;
+}
+
+.title{
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+}
+
+.inputcontainer{
+    background: #353959;
+    border-radius: 1.4rem;
+    padding: 0 0.8rem;
+    display: flex;
+    align-items: center;
+
+}
+
+#billTotalInput,#tipInput{
+ font-size: 1.2rem;
+ background: none;
+ border: none;
+ outline: none;
+ padding: none;
+
+}
+
+.buttoncontainer{
+    background:#8990ec;
+    display: grid;
+    place-items: center;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+
+}
+.splitbutton{
+    background:none;
+    border:none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+}
+.controls{
+    display: flex;
+    align-items: center;
+}
+.splitamount{
+    font-size: 1.6rem;
+    margin: 0.8rem;
+}
+#bottomcontainer{
+    display:flex;
+    justify-content: space-between;
+}
+
+.totalcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.total{
+    font-size: 2rem;
+}
+.authorName{
+    font-size: 0.8rem; 
+    font-weight: bold;
+    width: 200px;   
+    padding: 2px;
+    margin: 100px auto ;  
+   
+    
+
+}
