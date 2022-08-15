@@ -4,11 +4,14 @@
 }
 
 body{
-    background: #8990ec;
-}
+    background-image: url("jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}   
 
 .wrapper{
-   background: #272639;
+   background:linear-gradient(to bottom, rgba(255, 60, 0, 0.5), rgba(0, 30, 255, 0.818));
    height: 525px;
    width: 360px; 
    border-radius: 1rem;
