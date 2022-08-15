@@ -1,71 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<title>Tippy</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css">
-    <title>Tippy</title>
-</head>
+	<body>
+		<div class="wrapper">
+			<div class="container" id="topcontainer">
+				<div class="title">Bill total</div>
+				<div class="inputcontainer">
+					<span>$</span>
+					<input
+						type="number"
+						onkeyup="calculateBill()"
+						id="billTotalInput"
+						placeholder="0.00"
+						min="0"
+					/>
+				</div>
+			</div>
 
-<body>
-    
-    <div class="wrapper">
-        <div class="container" id="topcontainer">
-            <div class="title">Bill total</div>
-            <div class="inputcontainer">
-                <span>$</span>
-                <input type="text" onkeyup="calculateBill()" id="billTotalInput" placeholder="0.00">
-            </div>
-            
-            
-        </div>
-        
-        <div class="container" id="middlecontainer">
-            <div class="title">Tip</div>
-            <div class="inputcontainer">
-                <span>%</span>
-                <input type="text" placeholder="10" id="tipInput" onkeyup="calculateBill()">
-                
-            </div>
+			<div class="container" id="middlecontainer">
+				<div class="title">Tip</div>
+				<div class="inputcontainer">
+					<span>%</span>
+					<input
+						type="number"
+						placeholder="10"
+						id="tipInput"
+						onkeyup="calculateBill()"
+						min="0"
+					/>
+				</div>
+			</div>
+			<div class="container" id="bottomcontainer">
+				<div class="splitcontainer">
+					<div class="title">People</div>
+					<div class="controls">
+						<span class="buttoncontainer">
+							<button class="splitbutton" onclick="increasepeople()">
+								<span class="buttontext">+</span>
+							</button>
+						</span>
+						<span class="splitamount" id="numberofpeople">1</span>
+						<span class="buttoncontainer">
+							<button class="splitbutton" onclick="decreasepeople()">
+								<span class="buttontext">-</span>
+							</button>
+						</span>
+					</div>
+				</div>
 
-        </div>
-        <div class="container" id="bottomcontainer">
-            
-            <div class="splitcontainer">
-                <div class="title">People</div>
-                <div class="controls">
-                    <span class="buttoncontainer">
-                        <button class="splitbutton" onclick="increasepeople()">
-
-                            <span class="buttontext">+</span>
-                        </button>
-                    </span>
-                    <span class="splitamount" id="numberofpeople">1</span>
-                    <span class="buttoncontainer">
-                        <button class="splitbutton" onclick="decreasepeople()">
-                            <span class="buttontext">-</span>
-                        </button>
-                    </span>
-                </div>
-            </div>
-            
-            <div class="totalcontainer">
-                <div class="title">Total per person</div>
-                <div class="total" id="perpersontotal">$0.00</div>
-            </div> 
-            
-        </div>
-        <p class="authorName"> <  Made with 💙 by Rutvikk :D ></p>
-    </div>
-    <script src="app.js"></script>
-</body>
-
+				<div class="totalcontainer">
+					<div class="title">Total per person</div>
+					<div class="total" id="perpersontotal">$0.00</div>
+				</div>
+			</div>
+			<p class="authorName">< Made with 💙 by Rutvikk :D ></p>
+		</div>
+		<script src="app.js"></script>
+	</body>
 </html>
