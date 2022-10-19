@@ -93,11 +93,19 @@ body {
   font-size: 2rem;
 }
 .authorName {
+
   font-size: 0.8rem;
   font-weight: bold;
   width: 200px;
   padding: 2px;
   margin: 100px auto;
+
+	font-size: 0.8rem;
+	font-weight: bold;
+	width: 200px;
+	padding: 2px;
+	margin: 50px auto;
+
 }
 
 /* logo */
