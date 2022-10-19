@@ -98,3 +98,22 @@ body {
 	padding: 2px;
 	margin: 100px auto;
 }
+
+/* logo */
+
+.logo-container {
+	width: 100%;
+    margin-bottom: -50px;
+	display: flex;
+    justify-content: center;
+}
+
+#logo{
+	width: 100px;
+	height: 100px;
+	transition: 0.5s ease-in-out;
+}
+
+#logo:hover{
+    transform: scale(1.1);
+}
