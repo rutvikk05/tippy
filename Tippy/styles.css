@@ -1,119 +1,120 @@
 * {
-	font-family: 'M PLUS Rounded 1c', Avenir Next, Helvetica, sans-serif;
-	color: white;
+  font-family: "M PLUS Rounded 1c", Avenir Next, Helvetica, sans-serif;
+  color: white;
 }
 
 body {
-	background-image: url('jay-wennington-N_Y88TWmGwA-unsplash.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
+  background-image: url("jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .wrapper {
-	background: linear-gradient(
-		to bottom,
-		rgba(255, 60, 0, 0.5),
-		rgba(0, 30, 255, 0.818)
-	);
-	height: 525px;
-	width: 360px;
-	border-radius: 1rem;
-	padding: 1.2rem;
-	margin: 100px auto;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 60, 0, 0.5),
+    rgba(0, 30, 255, 0.818)
+  );
+  height: 525px;
+  width: 360px;
+  border-radius: 1rem;
+  padding: 1.2rem;
+  margin: 100px auto;
 }
 
 #topcontainer {
-	margin-top: 4rem;
+  margin-top: 4rem;
 }
 
 .container {
-	margin-top: 1.4rem;
+  margin-top: 1.4rem;
 }
 
 .title {
-	font-weight: bold;
-	margin-bottom: 0.6rem;
+  font-weight: bold;
+  margin-bottom: 0.6rem;
 }
 
 .inputcontainer {
-	background: #353959;
-	border-radius: 1.4rem;
-	padding: 0 0.8rem;
-	display: flex;
-	align-items: center;
+  background: #353959;
+  border-radius: 1.4rem;
+  padding: 0 0.8rem;
+  display: flex;
+  align-items: center;
 }
 
 #billTotalInput,
 #tipInput {
-	font-size: 1.2rem;
-	background: none;
-	border: none;
-	outline: none;
-	padding: none;
-	max-width: 100%;
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  outline: none;
+  padding: none;
+  max-width: 100%;
+  width: 100%;
 }
 
 .buttoncontainer {
-	background: #8990ec;
-	display: grid;
-	place-items: center;
-	width: 1.6rem;
-	height: 1.6rem;
-	border-radius: 50%;
+  background: #8990ec;
+  display: grid;
+  place-items: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
 }
 .splitbutton {
-	background: none;
-	border: none;
-	font-size: 0.8rem;
-	font-weight: bold;
-	display: grid;
-	place-items: center;
+  background: none;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: grid;
+  place-items: center;
 }
 .controls {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 .splitamount {
-	font-size: 1.6rem;
-	margin: 0.8rem;
+  font-size: 1.6rem;
+  margin: 0.8rem;
 }
 #bottomcontainer {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .totalcontainer {
-	display: flex;
-	flex-direction: column;
-	align-items: end;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 
 .total {
-	font-size: 2rem;
+  font-size: 2rem;
 }
 .authorName {
-	font-size: 0.8rem;
-	font-weight: bold;
-	width: 200px;
-	padding: 2px;
-	margin: 100px auto;
+  font-size: 0.8rem;
+  font-weight: bold;
+  width: 200px;
+  padding: 2px;
+  margin: 100px auto;
 }
 
 /* logo */
 
 .logo-container {
-	width: 100%;
-    margin-bottom: -50px;
-	display: flex;
-    justify-content: center;
+  width: 100%;
+  margin-bottom: -50px;
+  display: flex;
+  justify-content: center;
 }
 
-#logo{
-	width: 100px;
-	height: 100px;
-	transition: 0.5s ease-in-out;
+#logo {
+  width: 100px;
+  height: 100px;
+  transition: 0.5s ease-in-out;
 }
 
-#logo:hover{
-    transform: scale(1.1);
+#logo:hover {
+  transform: scale(1.1);
 }
