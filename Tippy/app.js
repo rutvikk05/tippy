@@ -2,6 +2,7 @@ const billTotalInput = document.getElementById('billTotalInput');
 const tipInput = document.getElementById('tipInput');
 const numberofpeople = document.getElementById('numberofpeople');
 const perpersontotal = document.getElementById('perpersontotal');
+const totaltip = document.getElementById('tip');
 
 let numberOfPeople = Number(numberofpeople.innerText);
 
@@ -12,6 +13,7 @@ const calculateBill = () => {
 	const total = bill + tip;
 	const perPersonBill = Math.floor((total / numberOfPeople)*100)/100;
 	perpersontotal.innerText = `$${perPersonBill}`;
+	totaltip.innerText = `$${total}`;
 };
 
 const increasepeople = () => {
