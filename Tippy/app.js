@@ -10,7 +10,7 @@ const calculateBill = () => {
 	const tipPercentage = Number(tipInput.value) / 100;
 	const tip = bill * tipPercentage;
 	const total = bill + tip;
-	const perPersonBill = Math.floor(total / numberOfPeople);
+	const perPersonBill = Math.floor((total / numberOfPeople)*100)/100;
 	perpersontotal.innerText = `$${perPersonBill}`;
 };
 
