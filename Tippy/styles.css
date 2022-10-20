@@ -148,3 +148,19 @@ body {
   color: black;
   background: white;
 }
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f6f6f6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444971;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #353959;
+}
