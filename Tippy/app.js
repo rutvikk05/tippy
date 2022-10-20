@@ -42,14 +42,12 @@ const switchDarkMode=()=>{
 		darkMode.classList.remove("fa-sun-o");
 		darkMode.classList.add("fa-moon-o");
 		darkMode.style.color="white";
-		document.body.style.backgroundImage = "none";
-		document.body.style.background="#000000";
+		document.body.style.backgroundImage = "url('https://infatuation.imgix.net/media/images/guides/dark-chicago-restaurant-power-rankings/Izakaya_sandynoto.jpg')";
 	}
 else{
 	darkMode.classList.remove("fa-moon-o");
 	darkMode.classList.add("fa-sun-o");
-	darkMode.style.color="black";
-	document.body.style.background="#ffffff";
+	document.body.style.backgroundImage = "url('jay-wennington-N_Y88TWmGwA-unsplash.jpg')";
 	}
 }
 
