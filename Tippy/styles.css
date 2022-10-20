@@ -19,7 +19,9 @@ body {
   width: 360px;
   border-radius: 1rem;
   padding: 1.2rem;
+  padding-bottom: 0.6rem;
   margin: 100px auto;
+  margin-bottom: 0;
 }
 
 #topcontainer {
