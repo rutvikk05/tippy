@@ -14,8 +14,8 @@ const calculateBill = () => {
 	const tip = bill * tipPercentage;
 	const total = bill + tip;
 	const perPersonBill = Math.floor((total / numberOfPeople)*100)/100;
-	perpersontotal.innerText = `$${perPersonBill}`;
-	totaltip.innerText = `$${total}`;
+	perpersontotal.innerText = `$${perPersonBill.toFixed(2)}`;
+	totaltip.innerText = `$${total.toFixed(2)}`;
 };
 
 const increasepeople = () => {
@@ -55,3 +55,22 @@ else{
 
 billTotalInput.addEventListener('keydown', preventAlphabets);
 tipInput.addEventListener('keydown', preventAlphabets);
+
+calculateBill();
+
+billTotalInput.setAttribute('data-last',billTotalInput.value);
+billTotalInput.addEventListener('keyup', function(){
+    this.setAttribute('data-last',this.value);
+});
+billTotalInput.addEventListener('click', function(){
+    if(this.value>this.getAttribute('data-last')) calculateBill();
+    if(this.value<this.getAttribute('data-last')) calculateBill();
+});
+tipInput.setAttribute('data-last',tipInput.value);
+tipInput.addEventListener('keyup', function(){
+    this.setAttribute('data-last',this.value);
+});
+tipInput.addEventListener('click', function(){
+    if(this.value>this.getAttribute('data-last')) calculateBill();
+    if(this.value<this.getAttribute('data-last')) calculateBill();
+});
