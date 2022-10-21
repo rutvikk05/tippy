@@ -13,12 +13,13 @@
 		<!-- favicon -->
 		<link rel="stylesheet" href="styles.css" />
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>Tippy</title>
 	</head>
 
 	<body>
+		<i class="fa fa-sun-o" id="dark-mode" style="font-size:36px;position:absolute;top:10px;right:10px;cursor:pointer;" onclick="switchDarkMode()"></i>
 		<div class="wrapper">
-			
             <!-- logo -->
 			<div class="logo-container">
 			<img src="logo2.png" alt="logo" id="logo">
@@ -67,11 +68,16 @@
 							</button>
 						</span>
 					</div>
+					<div>
+						<a href="spin.html"><p>Spin a bottle</p></a>
+					</div>
 				</div>
 
 				<div class="totalcontainer">
 					<div class="title">Total per person</div>
 					<div class="total" id="perpersontotal">$0.00</div>
+					<div class="title">Total Tip</div>
+					<div class="total" id="tip">$0.00</div>
 				</div>
 			</div>
 			<p class="authorName">< Made with 💙 by Rutvikk :D ></p>
