@@ -18,14 +18,14 @@ const increasepeople = () => {
 	numberOfPeople++;
 	calculateBill();
 	numberofpeople.innerText = numberOfPeople;
-	new Audio('https://cdn.pixabay.com/audio/2021/08/09/audio_9659856a03.mp3').play();
+	new Audio('https://cdn.pixabay.com/audio/2022/03/15/audio_79fff979bc.mp3').play();
 };
 const decreasepeople = () => {
 	if (numberOfPeople > 1) {
 		numberOfPeople--;
 		calculateBill();
 		numberofpeople.innerText = numberOfPeople;
-		new Audio('https://cdn.pixabay.com/audio/2021/08/09/audio_9659856a03.mp3').play();
+		new Audio('https://cdn.pixabay.com/audio/2022/03/15/audio_79fff979bc.mp3').play();
 	}
 };
 
