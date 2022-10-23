@@ -1,87 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap"
-			rel="stylesheet"
-		/>
-		<!-- favicon -->
-		<link rel="stylesheet" href="styles.css" />
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<title>Tippy</title>
-	</head>
 
-	<body>
-		<i class="fa fa-sun-o" id="dark-mode" style="font-size:36px;position:absolute;top:10px;right:10px;cursor:pointer;" onclick="switchDarkMode()"></i>
-		<div class="wrapper">
-            <!-- logo -->
-			<div class="logo-container">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet" />
+	<!-- favicon -->
+	<link rel="stylesheet" href="styles.css" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Tippy</title>
+</head>
+
+<body>
+	<i class="fa fa-sun-o" id="dark-mode" style="font-size:36px;position:absolute;top:10px;right:10px;cursor:pointer;"
+																																																																																											onclick="switchDarkMode()"></i>
+	<div class="wrapper">
+		<!-- logo -->
+		<div class="logo-container">
 			<img src="logo2.png" alt="logo" id="logo">
-		    </div>
-
-			<div class="container" id="topcontainer">	
-				<div class="title">Bill total</div>
-				<div class="inputcontainer">
-					<span>$</span>
-					<input
-						type="number"
-						onkeyup="calculateBill()"
-						id="billTotalInput"
-						placeholder="0.00"
-						min="0"
-					/>
-				</div>
-			</div>
-
-			<div class="container" id="middlecontainer">
-				<div class="title">Tip</div>
-				<div class="inputcontainer">
-					<span>%</span>
-					<input
-						type="number"
-						placeholder="10"
-						id="tipInput"
-						onkeyup="calculateBill()"
-						min="0"
-					/>
-				</div>
-			</div>
-			<div class="container" id="bottomcontainer">
-				<div class="splitcontainer">
-					<div class="title">People</div>
-					<div class="controls">
-						<span class="buttoncontainer" onclick="decreasepeople()">
-							<button class="splitbutton">
-								<span class="buttontext">-</span>
-							</button>
-						</span>
-						<span class="splitamount" id="numberofpeople">1</span>
-						<span class="buttoncontainer" onclick="increasepeople()">
-							<button class="splitbutton">
-								<span class="buttontext">+</span>
-							</button>
-						</span>
-					</div>
-					<div>
-						<a href="spin.html"><p>Spin a bottle</p></a>
-					</div>
-				</div>
-
-				<div class="totalcontainer">
-					<div class="title">Total per person</div>
-					<div class="total" id="perpersontotal">$0.00</div>
-					<div class="title">Total Tip</div>
-					<div class="total" id="tip">$0.00</div>
-				</div>
-			</div>
-			<p class="authorName">< Made with 💙 by Rutvikk :D ></p>
 		</div>
-		<script src="app.js"></script>
-	</body>
+
+		<div class="container" id="topcontainer">
+			<div class="title">Bill total</div>
+			<div class="inputcontainer">
+				<span>$</span>
+				<input type="number" onkeyup="calculateBill()" id="billTotalInput" placeholder="0.00" min="0" />
+			</div>
+		</div>
+
+		<div class="container" id="middlecontainer">
+			<div class="title">Tip</div>
+			<div class="inputcontainer">
+				<span>%</span>
+				<input type="number" placeholder="10" id="tipInput" onkeyup="calculateBill()" min="0" />
+			</div>
+		</div>
+		<div class="container" id="bottomcontainer">
+			<div class="splitcontainer">
+				<div class="title">People</div>
+				<div class="controls">
+					<span class="buttoncontainer" onclick="decreasepeople()">
+						<button class="splitbutton">
+							<span class="buttontext">-</span>
+						</button>
+					</span>
+					<span class="splitamount" id="numberofpeople">1</span>
+					<span class="buttoncontainer" onclick="increasepeople()">
+						<button class="splitbutton">
+							<span class="buttontext">+</span>
+						</button>
+					</span>
+				</div>
+				<div>
+					<a href="spin.html">
+						<p>Spin a bottle</p>
+					</a>
+				</div>
+			</div>
+
+			<div class="totalcontainer">
+				<div class="title">Total per person</div>
+				<div class="total" id="perpersontotal">$0.00</div>
+				<div class="title">Total Tip</div>
+				<div class="total" id="tip">$0.00</div>
+			</div>
+		</div>
+		<div>
+			<p class="authorName">
+				< Made with 💙 by Rutvikk :D>
+			</p>
+		</div>
+	</div>
+	<script src="app.js"></script>
+</body>
+
 </html>
