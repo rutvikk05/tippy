@@ -1,6 +1,6 @@
 const billTotalInput = document.getElementById('billTotalInput');
 const tipInput = document.getElementById('tipInput');
-const numberofpeople = document.getElementById('numberofpeople');
+var numberofpeople = document.getElementById('numberofpeople');
 const perpersontotal = document.getElementById('perpersontotal');
 const totaltip = document.getElementById('tip');
 const darkMode = document.getElementById('dark-mode');
@@ -18,18 +18,19 @@ const calculateBill = () => {
 	perpersontotal.innerText = `$${perPersonBill.toFixed(2)}`;
 	totaltip.innerText = `$${total.toFixed(2)}`;
 
-	const perPersonBill = Math.floor((total / numberOfPeople) * 100) / 100;
-	perpersontotal.innerText = `$${perPersonBill}`;
-	totaltip.innerText = `$${total}`;
+	//perPersonBill = Math.floor((total / numberOfPeople) * 100) / 100;
+	//perpersontotal.innerText = `$${perPersonBill}`;
+	//totaltip.innerText = `$${total}`;
 
 };
 
-const increasepeople = () => {
+function increasepeople(){
 	numberOfPeople++;
 	calculateBill();
 	numberofpeople.innerText = numberOfPeople;
 	new Audio('https://cdn.pixabay.com/audio/2022/03/15/audio_79fff979bc.mp3').play();
-};
+}
+
 const decreasepeople = () => {
 	if (numberOfPeople > 1) {
 		numberOfPeople--;
