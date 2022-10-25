@@ -13,9 +13,10 @@ body {
 
     font-size: 0.8rem;
     font-weight: bold;
-    width: 200px;
+    width: 100%;
     padding: 2px;
     margin: 30px auto;
+    text-align: center;
 
 }
 

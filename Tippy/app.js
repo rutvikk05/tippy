@@ -55,7 +55,7 @@ const switchDarkMode = () => {
 	else {
 		darkMode.classList.remove("fa-moon-o");
 		darkMode.classList.add("fa-sun-o");
-		document.body.style.backgroundImage = "url('jay-wennington-N_Y88TWmGwA-unsplash.jpg')";
+		document.body.style.backgroundImage = "url('images/jay-wennington-N_Y88TWmGwA-unsplash.jpg')";
 	}
 }
 
