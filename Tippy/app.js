@@ -5,6 +5,8 @@ const perpersontotal = document.getElementById('perpersontotal');
 const totaltip = document.getElementById('tip');
 const darkMode = document.getElementById('dark-mode');
 const body = document.querySelector("body");
+const urlimages = "https://generatorfun.com/code/uploads/Random-Restaurant-image-";
+
 
 let numberOfPeople = Number(numberofpeople.innerText);
 
@@ -17,10 +19,6 @@ const calculateBill = () => {
 	const perPersonBill = Math.floor((total / numberOfPeople)*100)/100;
 	perpersontotal.innerText = `$${perPersonBill.toFixed(2)}`;
 	totaltip.innerText = `$${total.toFixed(2)}`;
-
-	//perPersonBill = Math.floor((total / numberOfPeople) * 100) / 100;
-	//perpersontotal.innerText = `$${perPersonBill}`;
-	//totaltip.innerText = `$${total}`;
 
 };
 
@@ -47,11 +45,15 @@ const preventAlphabets = e => {
 };
 
 const switchDarkMode = () => {
+	
 	if (darkMode.classList.contains("fa-sun-o")) {
 		darkMode.classList.remove("fa-sun-o");
 		darkMode.classList.add("fa-moon-o");
 		darkMode.style.color = "white";
-		document.body.style.backgroundImage = "url('https://infatuation.imgix.net/media/images/guides/dark-chicago-restaurant-power-rankings/Izakaya_sandynoto.jpg')";
+		// document.body.style.backgroundImage = "url('images/Izakaya_sandynoto.jpg')";
+		let nroimage = Math.floor(Math.random() * 19) + 1;
+		document.body.style.backgroundImage = "url('" + urlimages  + nroimage + ".jpg'  )";
+
 	}
 	else {
 		darkMode.classList.remove("fa-moon-o");
