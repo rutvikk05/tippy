@@ -5,7 +5,7 @@ const perpersontotal = document.getElementById('perpersontotal');
 const totaltip = document.getElementById('tip');
 const darkMode = document.getElementById('dark-mode');
 const body = document.querySelector("body");
-const urlimages = "https://generatorfun.com/code/uploads/Random-Restaurant-image-";
+const urlimages = "https://source.unsplash.com/1920x1080/?dark";
 
 
 let numberOfPeople = Number(numberofpeople.innerText);
@@ -58,7 +58,7 @@ const switchDarkMode = () => {
 	else {
 		darkMode.classList.remove("fa-moon-o");
 		darkMode.classList.add("fa-sun-o");
-		document.body.style.backgroundImage = "url('images/jay-wennington-N_Y88TWmGwA-unsplash.jpg')";
+		document.body.style.backgroundImage = "url('https://source.unsplash.com/1920x1080/?hotel')";
 	}
 }
 

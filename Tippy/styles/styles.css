@@ -9,8 +9,8 @@ html {
 }
 
 body {
-  background-image: url("../images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-  background-size: cover;
+  background-image: url("https://source.unsplash.com/1920x1080/?hotel");
+   background-size: cover;
   background-repeat: no-repeat;
 }
 
